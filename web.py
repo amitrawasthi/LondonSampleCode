@@ -25,7 +25,7 @@ def shutdown():
 def hello():
     #    return name
     return render_template(
-        '/web/templates/test.html', **locals())
+        'var/www/html/web/templates/test.html', **locals())
 
 
 if __name__ == "__main__":
