@@ -1,23 +1,64 @@
-{% extends "layout.html" %}
-{% block body %}
+<html>
 
-<div class="block1">
-    <h1 style="text-align: center;">Welcome!</h1>
-    <h1>You have landed on Homepage of DISH Network.....</h1>
-    <h2 style="text-align: center;">DevOps powered by IBM - Using AWS, Jenkins and GitHub.....</h2>
+<head>
+    <title>Automation through AWS-Jenkins-GitHub</title>
+    <style>
+        body {
+            text-align: center;
+        }
 
-<h2 style="text-align: center;">
-<p id="date"></p>
-<script>
-document.getElementById("date").innerHTML = Date();
-</script>
-</h2>
+        h1 {
 
-&nbsp;
-<BR>
-<BR>
-    <img style="align-content: center;margin-left: auto; margin-right: auto;" src="http://filecache.mediaroom.com/mr5mr_dish/179539/DISH_WORDMARK_RED_LOGO_1115818_RGB_Newsroom__thumbnail.png"
-        width="200" height="72" /><img style="align-content: center; margin-left: auto; margin-right: auto;" src="https://www.upress.umn.edu/book-division/books/the-interface/IBM_logo.png/image"
-        width="196" height="72" />
-</div>
-<p>{% endblock %}</p>
+            font-weight: bold;
+            color: #ff9900;
+            font-size: 2.5em;
+        }
+        /*
+        * 
+        {
+            box-sizing: border-box;
+        }
+
+        .column 
+        {
+            float: center;
+            width: 33.33%;
+            padding: 5px;
+        }
+        */
+        /* Clearfix (clear floats) */
+        .row::after 
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="block1">
+        <h1 style="text-align: center;">Welcome!</h1>
+        <h1>You have landed on Homepage of DISH Network.....</h1>
+        <h2 style="text-align: center;">DevOps powered by IBM - Using AWS, Jenkins and GitHub.....</h2>
+    
+    <h2 style="text-align: center;">
+    <p id="date"></p>
+    <script>
+    document.getElementById("date").innerHTML = Date();
+    </script>
+    </h2>
+    
+    &nbsp;
+    <BR>
+    <BR>
+        <img style="align-content: center;margin-left: auto; margin-right: auto;" src="http://filecache.mediaroom.com/mr5mr_dish/179539/DISH_WORDMARK_RED_LOGO_1115818_RGB_Newsroom__thumbnail.png"
+            width="200" height="72" /><img style="align-content: center; margin-left: auto; margin-right: auto;" src="https://www.upress.umn.edu/book-division/books/the-interface/IBM_logo.png/image"
+            width="196" height="72" />
+    </div>
+
+</body>
+
+</html>

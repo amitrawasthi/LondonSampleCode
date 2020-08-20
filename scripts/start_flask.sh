@@ -1,1 +1,1 @@
-python /web/web.py > /dev/null 2>&1 &
+python /var/www/html/web/web.py > /dev/null 2>&1 &
